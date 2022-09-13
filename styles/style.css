@@ -1,0 +1,87 @@
+:root {
+--soft-blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+--very-dark-blue-main: hsl(217, 54%, 11%);
+--very-dark-blue-card: hsl(216, 50%, 16%);
+--very-dark-blue-line: hsl(215, 32%, 27%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark-blue-main);
+}
+
+.card-wrapper {
+    background-color: var(--very-dark-blue-card);
+    color: var(--soft-blue);
+    font-size: 1.125rem;
+    max-width: 340px;
+    border-radius: 20px;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+
+}
+
+.product-photo {
+    /* dodělat border radius */
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.information-wrapper {
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+.information-wrapper > * {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.information-wrapper h1 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.information-wrapper p {
+    line-height: 30px;
+}
+
+.ether-wrapper strong {
+    color: var(--cyan);
+    font-weight: 400;
+}
+
+hr {
+    height: 1px;
+    background-color: var(--very-dark-blue-line);
+    border: none;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.creator-information {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.creator-information img {
+    max-width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
